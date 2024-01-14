@@ -1,0 +1,14 @@
+Protocol:
+  path: 5066/message
+  packetlist:
+    - msg: C_PDU1
+      format:
+        - id: Type
+          type: uint16
+          tag: ""
+        - id: Vallen 
+          type: uint16
+          tag: ""
+        - id: Value
+          type: byte_array 
+          tag:  bin:"len:ValLen"
